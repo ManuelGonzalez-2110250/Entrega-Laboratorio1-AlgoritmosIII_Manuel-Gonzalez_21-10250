@@ -4,9 +4,13 @@
 
 Primero debe existir un archivo .txt que contenga los nombres en pares de personas que son amigas entre si 
 >**ej:**
-    >Carlos Juan
-    >Juan Ana
-    >Pedro Ana
+
+>Carlos Juan
+
+>Juan Ana
+
+>Pedro Ana
+
 
 Luego se tiene que hacer uso del makefile proporcionado, para hacerlo se utiliza CMD y se dirige a la carpeta en la que está descargado el archivo. Una vez se hace basta introduciendo "make" como comando en CMD. Una vez se compile el programa usando make, se debe usar el comando **"./runDegreesOfSeparation.sh.entrada.txt Nombre1 Nombre2"** donde **entrada.txt** es el .txt con los nombres, **Nombre1** es un nombre a buscar y **Nombre2** es el otro nombre a buscar
 ## Orden de las funciones nuevas:
