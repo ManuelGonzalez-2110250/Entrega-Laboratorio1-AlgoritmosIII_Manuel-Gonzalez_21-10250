@@ -1,11 +1,14 @@
 >Manuel González_21-10250
-##Para ejecutar:
+
+## Para ejecutar:
+
 Primero debe existir un archivo .txt que contenga los nombres en pares de personas que son amigas entre si ej:
     Carlos Juan
     Juan Ana
     Pedro Ana 
 Luego se tiene que hacer uso del makefile proporcionado, para hacerlo se utiliza CMD y se dirige a la carpeta en la que está descargado el archivo. Una vez se hace basta introduciendo "make" como comando en CMD. Una vez se compile el programa usando make, se debe usar el comando **"./runDegreesOfSeparation.sh.entrada.txt Nombre1 Nombre2"** donde **entrada.txt** es el .txt con los nombres, **Nombre1** es un nombre a buscar y **Nombre2** es el otro nombre a buscar
-##Orden de las funciones nuevas
+## Orden de las funciones nuevas:
+
 | Función| Complejidad |Justificación  |  
 |-------|--|----------------|
 | agregarAlFinal | **O(1)** | Funcion de la clase camino, es orden lineal por el uso de tail  |
@@ -18,7 +21,7 @@ Luego se tiene que hacer uso del makefile proporcionado, para hacerlo se utiliza
 | cargarDatos | **O(n x k)** | función para cargar los datos en el main, es O(n x k), puesto que se debe usar conectar (que es O(n)) k veces (siendo k la cantidad de líneas y n el número de personas únicas)  |
 | main | **O(n⁴)** | Puesto que se hace uso de la función "GradoDeSeparacion" y dicha función es la de mayor orden, main queda con **O(n⁴)**|
 
-##Para el diseño de la funciones:
+## Para el diseño de la funciones:
 
 Camino: Clase creada para seguir lo visto en las clases de teoría de algoritmos III. Se creo para que el programa sea más flexible pensando en que existe la probabilidad de que próximamente tengamos que implementar algo silimar. Para la implementación se usó el diseño de una lista doblemente enlazada circular con centinela, por lo que también se implementó el NodoCamino, para que se pueda realizar la implementación.
 
