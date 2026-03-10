@@ -136,13 +136,13 @@ class ListaAdyacenciaGrafo<T>: Grafo<T> {
     override fun obtenerArcosSalida(v: T): List<T>{
         var listaArcSalv: MutableList<T> = mutableListOf()
     	if(contiene(v)){
-    	    var nodoAct: NodoVer<T>? = head
-    	    while (nodoAct?.ver != v){
-    	    	nodoAct = nodoAct?.nodoVerSig
+    	    var nodoAct: NodoVer<T> = head!!
+    	    while (nodoAct.ver != v){
+    	    	nodoAct = nodoAct.nodoVerSig!!
     	    }
     	    var NodoLadAct: NodoLad<T>? = nodoAct.nodoLadAsoc
     	    while (NodoLadAct != null){
-		listaArcSalv.add(NodoLadAct.v!!)
+				listaArcSalv.add(NodoLadAct.v!!)
     	    	NodoLadAct = NodoLadAct.siguiente
     	    }
     	    
@@ -238,3 +238,4 @@ class ListaAdyacenciaGrafo<T>: Grafo<T> {
         return -1
     }    
 }
+
